@@ -1,0 +1,318 @@
+% Journal Publications
+
+% theses
+@PhDThesis{Langford-Dissertation_2017,
+ author         = {Zachary L. Langford},
+ title          = {Spatio-Temporal Characterization of Arctic Ecosystems Using Geospatial Analytics},
+ school         = {University of Tennessee - Knoxville, Bredesen Center for Interdisciplinary Research and Graduate Education},
+ address	= {Knoxville, Tennessee, USA},
+ day		= 15,
+ month		= dec,
+ year           = 2017
+}
+
+@MastersThesis{Langford-Theses_2013,
+ author         = {Zachary L. Langford},
+ title          = {{Are the Dry Valleys Getting Wetter? A Preliminary Assessment of Wetness Across the Mcmurdo Dry Valleys Landscape}},
+ school         = {Pennsylvania State University, Department of Civil and Environmental Engineering},
+ address	= {University Park, Tennessee, USA},
+ day		= 1,
+ month		= May,
+ year           = 2013
+}
+
+% pubs
+@InProceedings{Langford_DMESS2019_20191108,
+ author		= {Zachary L. Langford and Jitendra Kumar and Forrest M. Hoffman},
+ title		= {Deep Transfer Learning with Field-Based Measurements for Large Area Classification},
+ booktitle	= {Proceedings of the 2019 {IEEE} International Conference on Data Mining Workshops ({ICDMW} 2019)},
+ organization	= {Institute of Electrical and Electronics Engineers (IEEE)},
+ publisher	= {Conference Publishing Services (CPS)},
+ doi		= {10.1109/ICDMW.2019.00047},
+ day		= 8,
+ month		= nov,
+ year		= 2019,
+ abstract	= {Classification of Electro-Optical (EO) datasets using Deep Neural Networks (DNNs) has lead to high-performance supervised learning algorithms. However, DNNs require a large amount of labeled data for training which often have limited availability in ecological studies. Up-to-date classification of vegetation in sensitive Arctic ecosystems continue to be a challenge. In an ecosystem undergoing rapid change, capturing the dynamics of vegetation requires the existing maps of vegetation (such as Alaska Existing Vegetation Type (AKEVT), circa 2000) to be updated based on frequent field based observation of vegetation. A method is needed to transfer the knowledge gained from field-collected observations to a larger area using DNNs. Transfer learning is a machine learning technique where a model trained on one task is re-purposed on another similar task. This paper seeks to train DNNs using field-collected observations and apply transfer learning to apply the knowledge gained to update existing vegetation map at larger scale. We test two DNN methods, (1) a deep multilayer perceptron (MLP) model and (2) siamese MLP network that uses a structure to rank similarity between inputs and can be used for training datasets with few samples and show good performance with limited datasets (e.g. few-shot learning). The results show $\sim$90\% accuracy (using the field observations for evaluation) when transfer learning is applied to a siamese network, compared to $\sim$45\% accurate when a MLP is trained on the AKEVT and evaluated on the field observations. The approach show promise for improving and update the existing vegetation maps over large areas using limited field-based observations.}
+}
+
+
+@Article{Langford_RemoteSens_20190102,
+ author		= {Zachary L. Langford and Jitendra Kumar and Forrest M. Hoffman and Amy L. Breen and Colleen M. Iversen},
+ title		= {{Arctic Vegetation Mapping Using Unsupervised Training Datasets and Convolutional Neural Networks}},
+ journal	= {Remote Sensing},
+ volume		= 11,
+ number		= 1,
+ pages		= 69,
+ article_number	= 69,
+ doi		= {10.3390/rs11010069},
+ day		= 2,
+ month		= jan,
+ year		= 2019,
+ abstract	= {Land cover datasets are essential for modeling and analysis of Arctic ecosystem structure and function and for understanding land--atmosphere interactions at high spatial resolutions. However, most Arctic land cover products are generated at a coarse resolution, often limited due to cloud cover, polar darkness, and poor availability of high-resolution imagery. A multi-sensor remote sensing-based deep learning approach was developed for generating high-resolution (5~m) vegetation maps for the western Alaskan Arctic on the Seward Peninsula, Alaska. The fusion of hyperspectral, multispectral, and terrain datasets was performed using unsupervised and supervised classification techniques over a 343~km2 area, and a high-resolution (5~m) vegetation classification map was generated. An unsupervised technique was developed to classify high-dimensional remote sensing datasets into cohesive clusters. We employed a quantitative method to add supervision to the unlabeled clusters, producing a fully labeled vegetation map. We then developed convolutional neural networks (CNNs) using the multi-sensor fusion datasets to map vegetation distributions using the original classes and the classes produced by the unsupervised classification method. To validate the resulting CNN maps, vegetation observations were collected at 30 field plots during the summer of 2016, and the resulting vegetation products developed were evaluated against them for accuracy. Our analysis indicates the CNN models based on the labels produced by the unsupervised classification method provided the most accurate mapping of vegetation types, increasing the validation score (i.e., precision) from 0.53 to 0.83 when evaluated against field vegetation observations.}
+}
+
+
+@Article{Langford_RemoteSens_20160906,
+ author		= {Zachary L. Langford and Jitendra Kumar and Forrest M. Hoffman and Richard J. Norby and Stan D. Wullschleger and Victoria L. Sloan and Colleen M. Iversen},
+ title		= {Mapping {A}rctic Plant Functional Type Distributions in the {B}arrow {E}nvironmental {O}bservatory Using {WorldView-2} and {LiDAR} Datasets},
+ journal	= {Remote Sensing},
+ volume		= 8,
+ number		= 9,
+ pages		= 733,
+ doi		= {10.3390/rs8090733},
+ day		= 6,
+ month		= sep,
+ year		= 2016,
+ abstract	= {Multi-scale modeling of Arctic tundra vegetation requires characterization of the heterogeneous tundra landscape, which includes representation of distinct plant functional types (PFTs). We combined high-resolution multi-spectral remote sensing imagery from the WorldView-2 satellite with light detecting and ranging (LiDAR)-derived digital elevation models (DEM) to characterize the tundra landscape in and around the Barrow Environmental Observatory (BEO), a 3021-hectare research reserve located at the northern edge of the Alaskan Arctic Coastal Plain. Vegetation surveys were conducted during the growing season (June--August) of 2012 from 48 1\,m\,$\times$\,1\,m plots in the study region for estimating the percent cover of PFTs (i.e., sedges, grasses, forbs, shrubs, lichens and mosses). Statistical relationships were developed between spectral and topographic remote sensing characteristics and PFT fractions at the vegetation plots from field surveys. These derived relationships were employed to statistically upscale PFT fractions for our study region of 586 hectares at 0.25-m resolution around the sampling areas within the BEO, which was bounded by the LiDAR footprint. We employed an unsupervised clustering for stratification of this polygonal tundra landscape and used the clusters for segregating the field data for our upscaling algorithm over our study region, which was an inverse distance weighted (IDW) interpolation. We describe two versions of PFT distribution maps upscaled by IDW from WorldView-2 imagery and LiDAR: (1) a version computed from a single image in the middle of the growing season; and (2) a version computed from multiple images through the growing season. This approach allowed us to quantify the value of phenology for improving PFT distribution estimates. We also evaluated the representativeness of the field surveys by measuring the Euclidean distance between every pixel. This guided the ground-truthing campaign in late July of 2014 for addressing uncertainty based on representativeness analysis by selecting 24 1\,m\,$\times$\,1\,m plots that were well and poorly represented. Ground-truthing indicated that including phenology had a better accuracy ($R^2 = 0.75, RMSE = 9.94$) than the single image upscaling ($R^2 = 0.63, RMSE = 12.05$) predicted from IDW. We also updated our upscaling approach to include the 24 ground-truthing plots, and a second ground-truthing campaign in late August of 2014 indicated a better accuracy for the phenology model ($R^2 = 0.61, RMSE = 13.78$) than only using the original 48 plots for the phenology model ($R^2 = 0.23, RMSE = 17.49$). We believe that the cluster-based IDW upscaling approach and the representativeness analysis offer new insights for upscaling high-resolution data in fragmented landscapes. This analysis and approach provides PFT maps needed to inform land surface models in Arctic ecosystems.}
+}
+
+
+
+
+@article {Langford_2015,
+	title = {{Spatiotemporal Dynamics of Wetted Soils across a Polar Desert Landscape, McMurdo Dry Valleys Antarctica}},
+	journal = {Antarctic Science},
+	volume = {27},
+	year = {2015},
+	month = {April},
+	pages = {197-209},
+	chapter = {197},
+	doi = {10.1017/S0954102014000601},
+	url = {http://dx.doi.org/10.1017/S0954102014000601},
+	author = {Langford, Z. L. and Michael N. Gooseff and Lampkin, Derrick J.}
+}
+
+
+@InProceedings{Langford_DMESS2018_20181117,
+ author		= {Zachary L. Langford and Jitendra Kumar and Forrest M. Hoffman},
+ title		= {Wildfire Mapping in {I}nterior {A}laska Using Deep Neural Networks on Imbalanced Datasets},
+ booktitle	= {Proceedings of the 2018 {IEEE} International Conference on Data Mining Workshops ({ICDMW} 2018)},
+ organization	= {Institute of Electrical and Electronics Engineers (IEEE)},
+ publisher	= {Conference Publishing Services (CPS)},
+ doi		= {10.1109/ICDMW.2018.00116},
+ day		= 17,
+ month		= nov,
+ year		= 2018,
+ abstract	= {Wildfires are the dominant disturbance impacting many regions in Alaska and are expected to intensify due to climate change. Accurate tracking and quantification of wildfires are important for climate modeling and ecological studies in this region. Remote sensing platforms (e.g., MODIS, Landsat) are valuable tools for mapping wildfire events (burned or burning areas) in Alaska. Deep neural networks (DNN) have exhibited superior performance in many classification problems, such as high-dimensional remote sensing data. Detection of wildfires is an imbalanced classification problem where one class contains a much smaller or larger sample size, and performance of DNNs can decline. We take a known weight-selection strategy during DNN training and apply those weights to MODIS variables (e.g., NDVI, surface reflectance) for binary classification (i.e., wildfire or no-wildfire) across Alaska during the 2004 wildfire year, when Alaska experienced a record number of large wildfires. The method splits the input training data into subsets, one for training the DNN to update weights and the other for performance validation to select the weights based on the best validation-loss score. This approach was applied to two sampled datasets, such as where the no-wildfire class can significantly outweigh the wildfire class. The normal DNN training strategy was unable to map wildfires for the highly imbalanced dataset; however, the weight-selection strategy was able to map wildfires very accurately (0.96 recall score for 78,702 wildfire pixels ($500 \times 500$~m)).}
+}
+
+@InProceedings{Langford_DMESS2017_20171118,
+ author		= {Zachary L. Langford and Jitendra Kumar and Forrest M. Hoffman},
+ title		= {Convolutional Neural Network Approach for Mapping Arctic Vegetation using Multi-Sensor Remote Sensing Fusion},
+ booktitle	= {Proceedings of the 2017 {IEEE} International Conference on Data Mining Workshops ({ICDMW} 2017)},
+ organization	= {Institute of Electrical and Electronics Engineers (IEEE)},
+ publisher	= {Conference Publishing Services (CPS)},
+ doi		= {10.1109/ICDMW.2017.48},
+ day		= 18,
+ month		= nov,
+ year		= 2017,
+ abstract	= {Accurate and high-resolution maps of vegetation are critical for projects seeking to understand the terrestrial ecosystem processes and land-atmosphere interactions in Arctic ecosystems, such as U.S.\ Department of Energy's Next Generation Ecosystem Experiment (NGEE) Arctic. However, most existing Arctic vegetation maps are at a coarse resolution and with a varying degree of detail and accuracy. Remote sensing-based approaches for mapping vegetation, while promising, are challenging in high latitude environments due to frequent cloud cover, polar darkness, and limited availability of high-resolution remote sensing datasets (e.g., $\sim$5~m). This study proposes a new remote sensing based multi-sensor data fusion approach for developing high-resolution maps of vegetation in the Seward Peninsula, Alaska. We focus detailed analysis and validation study around the Kougarok river, located in the central Seward Peninsula of Alaska.
+
+We seek to evaluate the integration of hyper-spectral, multi-spectral, radar, and terrain datasets using unsupervised and supervised classification techniques over a $\sim$343.72~km$^{2}$ area for generating vegetation classifications at a variety of resolutions (5~m and 12.5~m). We fist applied a quantitative goodness-of-fit method, called Mapcurves, that shows the degree of spatial concordance between the public coarse resolution maps and $k$-means clustering values and relabels the $k$ values based on the best overlap. We develop a convolutional neural network (CNN) approach for developing high resolution vegetation maps for our study region in Arctic. We compare two CNN approaches: (1) breaking up the images into small patches (e.g., $6 \times 6$) and predict the vegetation class for entire patch and (2) semantic segmentation and predict the vegetation class for every pixel. We also perform accuracy assessments of the developed data products and evaluate varying CNN architectures. The fusion of hyperspectral and optical datasets performed the best, with accuracy values increased from 0.64 to 0.96--0.97 when using a training map produced by unsupervised clustering and Mapcurves labeling for both CNN models.}
+}
+
+
+@inproceedings{Langford_IAC_2011_1,
+	author = "Zachary L. Langford and Robert Griffin and Sundar Christopher and Casey Calamaio",
+	title = "{Protecting the Panama Canal Watershed through the Exchange of Geospatial Data}",
+	booktitle = "62nd International Astronautical Congress",
+	year = 2011,
+	address = "IAF"
+}
+
+
+
+@inproceedings{Langford_IAC_2011_2,
+	author = "Zachary L. Langford and Robert Griffin and Sundar Christopher and Casey Calamaio and Tiffany Keeton",
+	title = "{Socio-Environmental Impacts of Land Cover Change in the Panama Canal Watershed}",
+	booktitle = "62nd International Astronautical Congress",
+	year = 2011,
+	address = "IAF"
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+% Conferences
+
+@unpublished{Langford_AGU_2018,
+title= {{Deep Learning Approach for Mapping Arctic Vegetation using Multi-Sensor Remote Sensing Fusion}},
+author = {Zachary L. Langford and Jitendra Kumar and Forrest M. Hoffman},
+year = {December 9, 2018, Washington, District of Columbia, USA},
+note= {Workshop on Innovating the Geosciences: Data Science, Machine Learning, and Jupyter}
+}
+
+@unpublished{Langford_ICDM_2018,
+title= {{Wildfire Mapping in Interior Alaska Using Deep Neural Networks on Imbalanced Datasets}},
+author = {Zachary L. Langford and Jitendra Kumar and Forrest M. Hoffman},
+year = {November 17, 2018, New Orleans, Louisiana, USA},
+note= {Eighth Workshop on Data Mining in Earth System Science (DMESS 2018)}
+}
+
+@unpublished{Langford_ICEI_2018,
+title= {{Deep Learning Approach for Mapping Arctic Vegetation using Multi-Sensor Remote Sensing Fusion}},
+author = {Zachary L. Langford and Jitendra Kumar and Forrest M. Hoffman},
+year = {September 25, 2018, Jena, Germany},
+note= {10th International Conference on Ecological Informatics}
+}
+
+@unpublished{Langford_FOSS4G_2018,
+title= {{Wildfire Mapping in Interior Alaska Using Deep Neural Networks on Imbalanced Datasets}},
+author = {Zachary L. Langford and Jitendra Kumar and Forrest M. Hoffman},
+year = {August 13, 2018, Knoxville, Tennessee, USA},
+note= {FOSS4G Knoxville, University of Tennessee}
+}
+
+@unpublished{Langford_ICDM_2017,
+title= {{Convolutional Neural Network Approach for Mapping Arctic Vegetation using Multi-Sensor Remote Sensing}},
+author = {Zachary L. Langford and Jitendra Kumar and Forrest M. Hoffman},
+year = {November 18, 2017, New Orleans, Louisiana, USA},
+note= {Seventh Workshop on Data Mining in Earth System Science (DMESS 2017)}
+}
+
+@unpublished{Langford_IALE_2018,
+title= {{Applying Google Earth Engine to Wildfire Disturbance Detection in the State of Alaska}},
+author = {Forrest M. Hoffman and Zachary L. Langford and Jitendra Kumar and Steve Norman and and William W. Hargrove},
+year = {April 11, 2018, Chicago, Illinois, USA},
+note= {U.S. International Association for Landscape Ecology (US-IALE) Annual Meeting}
+}
+
+
+@unpublished{Langford_IALE_2016,
+title= {{Mapping Vegetation Distributions in Arctic Ecosystems for Parameterizing Models using Satellite-derived Phenology}},
+author = {Zachary L. Langford and Jitendra Kumar and Forrest M. Hoffman and Stan D. Wullschleger and Colleen M. Iversen and Richard J. Norby},
+year = {April 5, 2016, Asheville, North Carolina, USA},
+note= {U.S. International Association for Landscape Ecology (US-IALE) Annual Meeting}
+}
+
+@unpublished{Hoffman_ESS,
+title= {{Computational Approaches for Model, Experiment, and Data Integration Supporting Site Characterization and Model Evaluation}},
+author = {Forrest M. Hoffman and Jitendra Kumar and Zachary L. Langford and William W. Hargrove and James T. Randerson and William J. Riley and David M. Lawrence and Gretchen Keppel-Aleks},
+year = {January 1-February 3, 2016, St. Pete Beach, Florida, USA},
+note= {2016 Workshop on An Integrated Network for Terrestrial Ecosystem Research on Feedbacks to the Atmosphere and Climate (INTERFACE): Linking Experimentalists, Ecosystem Modelers, and Earth System Modelers}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@unpublished{Langford_AGU_2015,
+title= {{Landscape characterization of Arctic ecosystems using data mining algorithms and large geospatial datasets}},
+author = {Zachary L. Langford and Jitendra Kumar and Forrest M. Hoffman},
+year = {December 17, 2015, San Francisco, California, USA},
+note= {American Geophysical Union (AGU) Fall Meeting (December 14--18, 2015)}
+}
+
+@unpublished{Kumar_AGU_2015,
+title= {{Characterizing biotic and abiotic properties of landscape and their implications for ecohydrological processes across scales}},
+author = {Jitendra Kumar and Zachary L. Langford and Forrest M. Hoffman},
+year = {San Francisco, California, USA},
+note= {American Geophysical Union (AGU) Fall Meeting (December 14--18, 2015)}
+}
+
+@unpublished{Hoffman_NGEE_Arctic,
+title= {{Representativeness-Based Sampling Network Design and Scaling Strategies for Measurements in Arctic Ecosystems}},
+author = {Forrest M. Hoffman and Jitendra Kumar and Zachary Langford and Richard T. Mills and William W. Hargrove},
+year = {December 12--13, 2015, San Francisco, California, USA},
+note= {Next Generation Ecosystem Experiments (NGEE) Arctic All Hands Meeting (December 12--13, 2015)}
+}
+
+
+@unpublished{Hoffman_NGEE_Tropic,
+title= {{Characterizing Tropical Forest Representativeness for Optimizing Sampling Network Coverage}},
+author = {Forrest M. Hoffman and Jitendra Kumar and Damian M. Maddalena and Zachary L. Langford and William W. Hargrove and James T. Randerson},
+year = {August 9, 2015, Linthicum Heights, Maryland, USA},
+note= {1$^{st}$ Annual Next Generation Ecosystem Experiments (NGEE) Tropics Meeting (August 9, 2015)}
+}
+
+
+
+@unpublished{Hoffman_ATBC,
+title= {{Characterizing Tropical Forest Representativeness for Optimizing Sampling Network Coverage }},
+author = {Forrest M. Hoffman and Jitendra Kumar and Damian M. Maddalena and Zachary L. Langford and William W. Hargrove and James T. Randerson},
+year = {July 14, 2015, Honolulu, Hawaii, USA.},
+note= {52$^{nd}$ Annual Meeting of the Association for Tropical Biology and Conservation (ATBC) (July 12--16, 2015)}
+}
+
+@unpublished{Hoffman_IALE,
+title= {{High Performance Computational Landscape Ecology and Using Clustering to Define Climate Regimes}},
+author = {Forrest M. Hoffman and William W. Hargrove and Jitendra Kumar and Zachary L. Langford and and Damian M. Maddalena},
+year = {July 6, 2015, Portland, Oregon, USA},
+note= {International Association for Landscape Ecology (IALE) World Congress (July 5--10, 2015)}
+}
+
+
+@unpublished{Hoffman_CSDMS,
+title= {{Computational Approaches for Model, Experiment, and Data Integration Supporting Site Characterization and Model Evaluation}},
+author = {Forrest M. Hoffman and Jitendra Kumar and Zachary Langford and Stan D. Wullschleger and Damian Maddalena and William W. Hargrove and Mingquan Mu and William J. Riley and James T. Randerson},
+year = {May 28, 2015, Boulder, Colorado, USA},
+note= {Community Surface Dynamics Modeling System (CSDMS) 2015 Annual Meeting (May 26--28, 2015)}
+}
+
+
+@unpublished{Hoffman_AGU,
+title= {{Multivariate Spatio-Temporal Clustering: A Framework for Integrating Disparate Data to Understand Network Representativeness and Scaling Up Sparse Ecosystem Measurements}},
+author = {Forrest M. Hoffman and Jitendra Kumar and Damian Maddalena and Zachary Langford and William W. Hargrove},
+year = {December 18, 2014, San Francisco, California, USA},
+note= {2014 American Geophysical Union (AGU) Fall Meeting (December 15--19, 2014)}
+}
+
+
+@unpublished{Langford_AGU_2014,
+title= {{Mapping Plant Functional Type Distributions in Arctic Ecosystems Using WorldView-2 Satellite Imagery and Unsupervised Clustering}},
+author = {Zachary L. Langford and Jitendra Kumar and Forrest M. Hoffman and Victoria Sloan and Richard Norby and Stan Wullschleger},
+year = {December 18, 2014, San Francisco, California, USA},
+note= {2014 American Geophysical Union (AGU) Fall Meeting (December 15--19, 2014)}
+}
+
+@unpublished{Kumar_AGU_2014,
+title= {{Remote Sensing to Inform Plant Functional Type (PFT) Distributions in the Community Land Model}},
+author = {Kumar, Jitendra and Zachary L. Langford and Fengming Yuan and Forrest M. Hoffman},
+year = {December 19, 2014, San Francisco, California, USA},
+note= {2014 American Geophysical Union (AGU) Fall Meeting (December 15--19, 2014)}
+}
+
+@unpublished{Hoffman_DOE_Amazon,
+title= {{Integrating Earth Science Research through Model, Experiment, and Data Synthesis}},
+author = {Forrest M. Hoffman and Jitendra Kumar and William W. Hargrove and Zachary Langford and Damian Maddalena and William J. Riley and James T. Randerson},
+year = {October 29, 2014, Washington, DC, USA},
+note= {U.S. Department of Energy Green Ocean Amazon (GOAmazon) Joint Principal Investigators Meeting, Woodrow Wilson International Center for Scholars}
+}
+
+@unpublished{Hoffman_DOE,
+title= {{Representativeness-Based Sampling Network Design and Scaling Strategies for Measurements in Arctic and Tropical Ecosystems}},
+author = {Forrest M. Hoffman and Jitendra Kumar and Zachary Langford and Damian Maddalena and Nathan Collier and Victoria Sloan and Richard T. Mills and William W. Hargrove},
+year = {May 6, 2014, Potomac, Maryland, USA},
+note= {U.S. Department of Energy Joint Terrestrial Ecosystem Science and Subsurface Biogeochemistry Research Principal Investigator Meeting (May 6--7, 2014)}
+}
+
+% Penn State 
+
+@unpublished{Langford_AGU_2012,
+title= {{Characterizing spatiotemporal dynamics of wetted soils across a polar desert landscape, McMurdo Dry Valleys, Antarctica}},
+author = {Langford, Zachary L. and Michael N. Gooseff and Derrick J. Lampkin},
+year = {December 2012, San Francisco, CA, USA},
+note= {2012 American Geophysical Union (AGU) Fall Meeting}
+}
+
+@unpublished{Langford_LTER,
+title= {{Characterizing spatiotemporal dynamics of wetted soils across a polar desert landscape, McMurdo Dry Valleys, Antarctica}},
+author = {Langford, Zachary L. and Michael N. Gooseff and Derrick J. Lampkin},
+year = {September 2012, Estes Park, CO, USA},
+note= {LTER All Scientists Meeting}
+}
+
+@unpublished{Langford_SCAR,
+title= {{Characterizing spatiotemporal dynamics of wetted soils across a polar desert landscape, McMurdo Dry Valleys, Antarctica}},
+author = {Langford, Zachary L. and Michael N. Gooseff and Derrick J. Lampkin},
+year = {July 2012, Portland, OR, USA},
+note= {XXXII SCAR and Open Science Conference}
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,403 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{tidycv} % Use the custom tidycv.cls style
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{Zachary}{Langford}
+\position{R\&D Associate, Cyber \& Applied Data Analytics Division}
+\address{Cyber Physical Systems Group, Oak Ridge National Laboratory}
+% \mobile{(+00) 00-0000-0000}
+\email{zlangfor@vols.utk.edu}
+\homepage{langfordzl.github.io}
+\github{langfordzl}
+\linkedin{zachary-langford-91857b164}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+\makeatletter
+%\renewcommand\@biblabel[1]{aaa}
+\renewenvironment{thebibliography}[1]
+     {\sectionskip
+      \vspace{-.7em}
+      \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}%
+      \list{}%
+           {\leftmargin0pt
+            \@openbib@code
+            \usecounter{enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+     {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
+\makeatother
+
+\begin{document}
+
+\makecvheader
+
+
+%----------------------------------------------------------------------------------------
+%	Research Interest
+%----------------------------------------------------------------------------------------
+\cvsection{Overview}
+\cvresearchinterest{
+I completed my PhD in Energy Science and Engineering from the University of Tennessee. 
+My PhD research applied data mining methods on remote sensing imagery and environmental datasets for landscape characterization in Arctic ecosystems. I received my M.Sc. in Civil Engineering from Penn State University focusing on object-based imagery analysis and artificial neural networks.
+I recently worked for Virginia Tech, focusing on developing data analytic frameworks for national security projects, and Boeing Research \& Technology, developing geospatial and machine learning tools for the aerospace industry.  
+%My current research interests include data mining applications in scientific disciplines such as cyber-physical systems, image/signal processing, geospatial modeling, and environmental sciences.
+}
+
+
+%----------------------------------------------------------------------------------------
+%	Research Interest
+%----------------------------------------------------------------------------------------
+\cvsection{Research Interest}
+\cvresearchinterest{Data analytics in engineering systems, environmental modeling, spatial statistics, reinforcement learning, meta-learning, environmental remote sensing, geospatial modeling}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsection{Education}
+\begin{cveducations}
+  
+  \cveducation{
+    \begin{cveducationitems2}
+         2017 \\ 
+	\end{cveducationitems2}
+    } % Year
+    {{\bf University of Tennessee}} % Institution
+    {
+    \begin{cveducationitems} % Description(s)
+        PhD in Energy Science \& Engineering \hfill Advisor: Dr. Jitendra Kumar (ORNL)\\ Dissertation: Spatiotemporal  Characterization of Arctic Landscapes Using Geospatial Analytics\\
+	\end{cveducationitems}
+    }
+    
+  \cveducation{2013} % Year
+    {{\bf Pennsylvania State University -- University Park}} % Institution
+    {
+    \begin{cveducationitems} % Description(s)
+        MS in Civil Engineering \hfill Advisor: Dr. Michael Gooseff (CU-Boulder) \\ Concentration: Remote Sensing, Machine Learning\\
+	\end{cveducationitems}
+    }
+    
+  \cveducation{2011} % Year
+    {{\bf University of Alabama -- Huntsville}} % Institution
+    {
+    \begin{cveducationitems} % Description(s)
+        BS in Earth System Science \\Minor: Mathematics\\
+	\end{cveducationitems}
+    }    
+    
+%      \cveducation{2020--Current} % Year
+%    {{\bf University of Tennessee}} % Institution
+%    {
+%    \begin{cveducationitems} % Description(s)
+%        Graduate Certificate
+%	\end{cveducationitems}
+%    }   
+    
+\end{cveducations}
+
+
+%-------------------------------------------------------------------------------
+%	RESEARCH EXPERIENCE
+%-------------------------------------------------------------------------------
+%% usage: \begin{cvresearch}{<Project title>}{<Date>}{<Position>}{<Institution>}
+%%			\item <Description>
+%%			\item <Description>
+%%		  \end{cvresearch}
+\cvsection{Research Experience}
+\begin{cvresearches}
+%------------------------------------------------
+\begin{cvresearch}{R{\&}D Associate}{Aug. 2019 -- present}{Cyber \& Applied Data Analytics Division}{Oak Ridge National Laboratory}
+ \item Developing data analytics techniques (e.g. anomaly detection, visualizations, machine learning, etc.) for energy security.
+ \item Machine learning algorithms for developing digital twins of programming logic controllers (PLCs).
+ \item Contributing to research proposals/papers around machine learning and data mining.
+ \item Data augmentation for wireless signal classification. 
+\end{cvresearch}
+%------------------------------------------------
+\begin{cvresearch}{Research Scientist}{Jan. 2019 -- Aug. 2019}{Hume Center for National Security \& Technology}{Virginia Tech}
+ \item Developed new approaches for signal classification using deep learning methods. 
+ \item Developed siamese networks for better classification of signals with high signal-to-noise ratio.
+ \item Generative Adversarial Network modeling of latent space for extracting wanted features of synthetic images. 
+ \item Contributed to Bayesian networks for understanding the likelihoods of known causes and contributing factors. 
+% \item Publication: \cite{Langford:2019:RSC:3324921.3328781}
+\end{cvresearch}
+
+\pagebreak
+%------------------------------------------------
+\begin{cvresearch}{Advanced Technologist}{Aug. 2016 -- Jan. 2019}{Boeing Research \& Technology}{Boeing}
+ \item Geospatial machine learning applications for synthetic modeling of environments.
+ \item Hyperspectral remote sensing sensor modeling (using DIRSIG) for methane detection.
+ \item Multi/Hyperspectral image classification using deep learning techniques. 
+ \item Geospatial modeling (raster, vector, LiDAR processing) for inputs into autonomous aircraft taxing. 
+\end{cvresearch}
+
+\end{cvresearches}
+
+
+%------------------------------------------------
+\cvsection{Graduate Research Experience}
+\begin{cvresearches}
+
+\begin{cvresearch}{Graduate Research Assistant}{Aug. 2014 -- Aug. 2016}{Bredesen Center}{University of Tennessee}
+ \item Working with Dr. Jitendra Kumar and Dr. Forrest Hoffman in the Climate Change Science Institute at ORNL.
+ \item Provided geospatial datasets of Arctic ecosystems for parameterizing land surface models for climate change research.
+ \item  Developed multi-sensor fusion frameworks of satellite imagery and ground measurements for retrieving surface parameters.
+ \item  Developed automated algorithms for identifying and understanding disturbance threats
+(e.g., wildfires) using spatiotemporal datasets in Google Earth Engine.
+\end{cvresearch}
+
+\begin{cvresearch}{ASTRO Internship}{Jan. 2014 -- Aug. 2014}{Computational Earth Sciences Group}{Oak Ridge National Laboratory}
+ \item Program offering short-term research opportunities with ORNL to current/recent graduate students. 
+ \item Developed geospatial algorithms on high-resolution satellite imagery (i.e. 20 cm) for upscaling ground-based measurements.
+ \item Continued research while enrolling into UTK/ORNL PhD program.
+\end{cvresearch}
+
+\begin{cvresearch}{Graduate Research Assistant}{2011 -- 2013}{Department of Civil and Environmental Engineering}{Pennsylvania State University}
+ \item Utilized high-resolution, 50 cm -- 2 m, panchromatic \& multispectral satellite imagery
+(QuickBird, WorldView-2, and GeoEye) to characterize soil moisture profiles in the McMurdo Dry Valleys, Antarctica using an object-based image classification. 
+ \item Create a feed-forward neural network to estimate soil moisture values using multispectral satellite imagery and ground-based measurements.
+\end{cvresearch}
+
+\begin{cvresearch}{Undergraduate Research Assistant}{2010 -- 2011}{Department of Atmospheric Sciences}{University of Alabama in Huntsville}
+\item Collaborated with NASA's Regional Visualization and Monitoring System (SERVIR) and
+Smithsonian Tropical Research Institute (STRI) to integrate satellite and geospatial data
+to support environmental monitoring in Central America.
+\end{cvresearch}
+
+\end{cvresearches}
+
+
+%----------------------------------------------------------------------------------------
+%	HONORS AND AWARDS
+%----------------------------------------------------------------------------------------
+
+\cvsection{Honors and Services}
+\begin{cvhonors}
+  %\cvhonor{2018}{{\bf Scamander Scholarship}}{
+  %	\begin{cvhonoritems} % Description(s)
+ %       full tuition and stipend for 12 months and research-related expenses (total $\$75,200$)\\
+%	\end{cvhonoritems}}
+  \cvhonor{2014--2017}{Energy Science \& Engineering PhD Fellowship}{ORNL/UTK}
+  \cvhonor{2014 -- Present}{Reviewer}{
+  	\begin{cvhonoritems} % Description(s)
+        Energies, Journal of Spatial Science  \hfill 2020\\
+        Symmetry, Geophysical Research Letters \hfill 2019\\
+        IEEE ICDM Workshop on
+Data Mining in Earth System Science \hfill 2017--2019\\
+        Remote Sensing \hfill 2014--2020\\
+	\end{cvhonoritems}}
+\end{cvhonors}
+
+
+\cvsection{Research Proposals}
+
+\begin{cvhonors}
+
+  \cvhonor{2020 (Submitted)}{(co-PI) FAIR Data and Models for Artificial Intelligence and Machine Learning}{U.S. Department of Energy (DOE)}
+
+\end{cvhonors}
+
+\pagebreak
+%----------------------------------------------------------------------------------------
+% TECHNICAL STRENGTHS
+%----------------------------------------------------------------------------------------
+%% usage: \cvtechnicalstrength{<Type>}{<List>} 
+\cvsection{Technical Strengths}
+\begin{cvtechnicalstrengths}
+  \cvtechnicalstrength
+  {Languages} % Type
+  {Python (Advanced), MATLAB (Proficient), C/C++ (Proficient), CUDA (Beginner), MPI (Beginner) } % List
+  \cvtechnicalstrength
+  {Python Libraries} % Type
+  {TensorFlow, PyTorch, MXNet, Scikit-learn, GeoPandas} % List
+   \cvtechnicalstrength
+  {GIS/Remote Sensing Tools} % Type
+  {GRASS GIS, QGIS, ArcGIS, Google Earth Engine} % List 
+   \cvtechnicalstrength
+  {Other Tools} % Type
+  {LaTeX, SQL, Elasticsearch, DIRSIG} % List 
+\end{cvtechnicalstrengths}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATION
+%----------------------------------------------------------------------------------------
+
+
+\cvsection{Publications}
+\begin{cvpublications}
+\begin{bibunit}[tidycv]
+  \nocite{Langford:2019:RSC:3324921.3328781}
+  \nocite{Langford_DMESS2019_20191108}
+  \nocite{Langford_RemoteSens_20190102}
+  \nocite{Langford_DMESS2018_20181117}
+   \nocite{Langford_DMESS2017_20171118}
+   \nocite{Langford_RemoteSens_20160906}
+   \nocite{Langford_2015}
+  \putbib[publication_public]
+\end{bibunit}
+\end{cvpublications}
+
+
+\cvsection{Conference Abstracts}
+%% usage 1: insert publications using bibentry
+\begin{cvpublications}
+\begin{bibunit}[tidycv]
+
+%2019
+ \nocite{AGU_2019}
+  \nocite{ Hoffman_IALE_2019}
+  
+ %2018
+ \nocite{Langford_AGU_2018}
+% \nocite{Langford_ICDM_2018}
+ \nocite{Langford_ICEI_2018}
+ \nocite{Langford_FOSS4G_2018}
+ \nocite{Langford_IALE_2018}
+ \nocite{Hoffman_DOE_2018}
+ 
+ %2017
+ \nocite{Langford_ICDM_2017}
+ 
+ %2016
+ \nocite{Langford_IALE_2016}
+ \nocite{Hoffman_ESS}
+ \nocite{Langford_AGU_2015}
+ \nocite{Kumar_AGU_2015}
+ 
+ \nocite{Hoffman_NGEE_Arctic}
+ \nocite{Hoffman_NGEE_Tropic}
+ \nocite{Hoffman_ATBC}
+ \nocite{Hoffman_IALE}
+ \nocite{Hoffman_CSDMS}
+ \nocite{Hoffman_AGU}
+ \nocite{Langford_AGU_2014}
+ \nocite{Kumar_AGU_2014}
+ \nocite{Hoffman_DOE_Amazon}
+ \nocite{Hoffman_DOE}
+ 
+ %2012
+ \nocite{Langford_AGU_2012}
+ \nocite{Langford_LTER}
+ \nocite{Langford_SCAR}
+ 
+ %2011
+  \nocite{Langford_IAC_2011_1}
+  \nocite{Langford_IAC_2011_2}
+  \putbib[publication_public]
+\end{bibunit}
+\end{cvpublications}
+
+
+\cvsection{Datasets}
+%% usage 1: insert publications using bibentry
+\begin{cvpublications}
+\begin{bibunit}[tidycv]
+  \nocite{osti_1123668}
+  \nocite{osti_1418854}
+  \putbib[publication_public]
+\end{bibunit}
+\end{cvpublications}
+
+\pagebreak
+\cvsection{Theses and Dissertations}
+%% usage 1: insert publications using bibentry
+\begin{cvpublications}
+\begin{bibunit}[tidycv]
+ \nocite{Langford-Dissertation_2017}
+  \nocite{Langford-Theses_2013}
+  \putbib[publication_public]
+\end{bibunit}
+\end{cvpublications}
+
+\cvsection{Patents}
+%% usage 1: insert publications using bibentry
+\begin{cvpublications}
+\begin{bibunit}[tidycv]
+  \nocite{langford_20190158805}
+  \putbib[publication_public]
+\end{bibunit}
+\end{cvpublications}
+
+
+
+%-------------------------------------------------------------------------------
+% SOFTWARE
+%-------------------------------------------------------------------------------
+%\cvsection{Software}
+%\begin{cvsoftwares}
+%  \cvsoftware
+%  {LaTeX template} % Type
+%  {{\bf TidyCV}: simple and tidy LaTeX template for your curriculum vitae} % Title
+% {https://github.com/SeojinBang/TidyCV} % URL
+%\end{cvsoftwares}
+
+
+
+
+%-------------------------------------------------------------------------------
+% PROFESSIONAL SERVICES
+%-------------------------------------------------------------------------------
+%\cvsection{Professional Service}
+%\begin{cvprofessionals}
+%  \cvprofessional{2020}{Reviewer}{Energies, Remote Sensing, Journal of Spatial Science, Geophysical Research Letters}{}
+%  \cvprofessional{2019}{Reviewer}{Symmetry, Remote Sensing, Geophysical Research Letters}{}
+%   \cvprofessional{2018}{Reviewer}{Remote Sensing, Sensors, Algorithms}{}
+%   \cvprofessional{2017-18}{Reviewer}{IEEE ICDM}{}
+%   \cvprofessional{2014-16}{Reviewer}{Remote Sensing}{}
+%\end{cvprofessionals}
+
+%-------------------------------------------------------------------------------
+% ATTENDED WORKSHOPS
+%-------------------------------------------------------------------------------
+\cvsection{Attended Workshops}
+\begin{cvprofessionals}
+  \cvprofessional{May 2020}{Shipley Associates}{Shipley's Proposal Writing Course}{}
+  \cvprofessional{Nov. 2018}{IEEE ICDM Tutorial}{Summarizing Graphs at Multiple Scales}{}
+  \cvprofessional{Jun. 2016}{University of Alaska Fairbanks}{ International Arctic Research Center (IARC) Summer School}{}
+  \cvprofessional{Jul. 2014}{University of Minnesota}{Polar Geospatial Center Boot Camp}{} 
+  \cvprofessional{2013}{Texas A{\&}M University}{Soil \& Water Assessment Tool Workshop}{}
+
+\end{cvprofessionals}
+%----------------------------------------------------------------------------------------
+%	TEACHING EXPERIENCE
+%----------------------------------------------------------------------------------------
+%% usage: 
+%% \cvsubsection{<Institution>}{<Position>}
+%% \cvteaching{<Date>}{<Course title>}
+%%\cvsection{Teaching Experience}
+%\cvsubsection{{\bf Hogwarts School of Witchcraft and Wizardry}}{Teaching Assistant}
+%\begin{cvteachings}
+%\cvteaching
+%  	{2018} % Year
+%    {Concealment and Disguise} % Course Title
+%  \cvteaching
+%    {2017} % Year
+ %   {Transfiguration} % Course Title
+%\end{cvteachings}
+%--------------------
+%\cvsubsection{\bf Seoul National Magic School}{Teaching Assistant}
+%\begin{cvteachings}
+%  \cvteaching{2014}{Stealth and Tracking}
+%  \cvteaching{2014}{Introduction to Magic I and II}
+%\end{cvteachings}
+
+%----------------------------------------------------------------------------------------
+%	Publication at the End
+%----------------------------------------------------------------------------------------
+
+
+\end{document}
